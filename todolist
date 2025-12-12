@@ -1,0 +1,20 @@
+Sujet: Application gérant les trajets
+    -Lecture du sujet (OK)
+    -Test de base de données : requêtes
+
+Refactorisation: 
+    -Connexion a la base
+
+Bases: Coopérative
+    -Tables: 
+        -Chauffeurs 
+        -Véhicules
+        -Trajet
+
+Design:
+
+Fonctions:
+
+Intégration php:
+
+Backoffice: 
