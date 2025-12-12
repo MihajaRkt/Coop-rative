@@ -14,6 +14,13 @@
     <h2> Entrez les informations nécessaires </h2>
 
     <form action="/insertion" method="post">
+    <p>Chauffeur
+            <select name="vehicule">
+                <?php foreach ($listeVehicule as $l) { ?>
+                    <option value="<?= $l['idvehicule'] ?>"><?= $l['nom'] ?></option>
+                <?php } ?>
+            </select>
+        </p>
         <p>Vehicule
             <select name="vehicule">
                 <?php foreach ($listeVehicule as $l) { ?>
