@@ -3,7 +3,7 @@ Sujet: Application gérant les trajets
     -Test de base de données : requêtes
 
 Refactorisation: 
-    -Connexion a la base
+    -Connexion a la base (OK)
     -Rangement par dossier (M) (OK)
 
 Bases: Coopérative
@@ -15,8 +15,9 @@ Bases: Coopérative
 Design:
 
 Fonctions:
-    -getChauffeurs et getVehicules (en cours) (T)
-    -getTrajets () (T)
+    -getChauffeurs (en cours) (M)
+    -getVehicules (OK) (T)
+    -getTrajets (en cours) (T)
 
 Intégration php:
     -index.php
@@ -24,3 +25,6 @@ Intégration php:
         .Formulaire de trajet (OK) (M)
 
 Backoffice: 
+    -models
+        -VehiculeModel.php
+        -
