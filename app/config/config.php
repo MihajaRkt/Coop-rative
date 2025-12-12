@@ -67,13 +67,20 @@ return [
 	 **************************************/
 	'database' => [
 		// MySQL Example:
-		// 'host'     => 'localhost',      // Database host (e.g., 'localhost', 'db.example.com')
-		// 'dbname'   => 'your_db_name',   // Database name (e.g., 'flightphp')
-		// 'user'     => 'your_username',  // Database user (e.g., 'root')
-		// 'password' => 'your_password',  // Database password (never commit real passwords)
+		'host'     => 'localhost:3306',      // Database host (e.g., 'localhost', 'db.example.com')
+		'dbname'   => 'cooperative',   // Database name (e.g., 'flightphp')
+		'user'     => 'root',  // Database user (e.g., 'root')
+		'password' => '',  // Database password (never commit real passwords)
 
+		// POSTGRES :
+		// 'host'     => 'localhost',      // Database host (e.g., 'localhost', 'db.example.com')
+		// 'dbname'   => 'tpflight',   // Database name (e.g., 'flightphp')
+		// 'user'     => 'postgres',  // Database user (e.g., 'root')
+		// 'password' => 'postgres',  // Database password (never commit real passwords)
+		// 'port' 		=>  5432,
 		// SQLite Example:
 		// 'file_path' => __DIR__ . $ds . '..' . $ds . 'database.sqlite', // Path to SQLite file
+
 	],
 
 	// Google OAuth Credentials
