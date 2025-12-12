@@ -1,50 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - E-commerce</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title> Coopérative - Accueil </title>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.php" class="logo">E-Varotra</a>
-                <ul class="menu">
-                    <li><a href="index.php">Accueil</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <h1>Bienvenue sur notre boutique</h1>
+    <h1> Coopératives </h1>
 
-        <section class="product-list">
-            <?php foreach($products as $p){ ?>
+    <h2> Entrez les informations nécessaires </h2>
 
-            <article class="product-card">
-                <a href="product/<?= $p['id'] ?>">
-                    <img src="images/<?= $p['img'] ?>" alt="Produit 1">
-                    <h2>
-                        <?= $p['name'] ?>
-                    </h2>
-                    <p>Prix :
-                        <?= $p['prix'] ?>
-                    </p>
-                </a>
-            </article>
+    <p> (Début) Date : <input type="date" name="d_debut"> Heure : <input type="time" name="h_debut"> </p>
+    <p> (Fin) Date : <input type="date" name="d_fin"> Heure : <input type="time" name="h_fin"> </p>    
+    <p> Recette : <input type="number" name="recette"> </p>
+    <p> Carburant : <input type="number" name="carburant" > </p>
 
-            <?php } ?>
-        </section>
+    <p> <input type="submit" value="Valider"> </p>
 
-    </main>
-    <footer>
-        <p>&copy; 2025 E-Varotra</p>
-    </footer>
+    <a href="#"> Liste des coopératives</a>
+
 </body>
-
 </html>

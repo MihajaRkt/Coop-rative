@@ -1,9 +1,10 @@
 Sujet: Application gérant les trajets
-    -Lecture du sujet (OK)
+    -Lecture du sujet (OK) 
     -Test de base de données : requêtes
 
 Refactorisation: 
     -Connexion a la base
+    -Rangement par dossier (M) (OK)
 
 Bases: Coopérative
     -Tables: 
@@ -14,7 +15,12 @@ Bases: Coopérative
 Design:
 
 Fonctions:
+    -getChauffeurs et getVehicules (en cours) (T)
+    -getTrajets () (T)
 
 Intégration php:
+    -index.php
+        .Lien pour les listes 
+        .Formulaire de trajet (OK) (M)
 
 Backoffice: 

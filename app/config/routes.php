@@ -16,9 +16,7 @@ use app\models\ProdModel;
 $router->group('', function(Router $router) use ($app) {
 
 	$router->get('/', function() use ($app) {
-		$pmodel= new ProdModel();
-		$prod= $pmodel -> getProducts();
-		$app->render('index', [ 'products' => $prod ]);
+		$app->render('index');
 	});
 
 	$router->get('/product/@id', function($id) use ($app) {
