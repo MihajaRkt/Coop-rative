@@ -1,6 +1,8 @@
 <?php
 
 use app\controllers\ApiExampleController;
+use app\controllers\ChauffeurController;
+use app\controllers\TrajetController;
 use app\controllers\VehiculeController;
 use app\middlewares\SecurityHeadersMiddleware;
 use flight\Engine;
@@ -41,8 +43,11 @@ $router->group('', function(Router $router) use ($app) {
 	// });
 
 	// $router->post('/traitementInsert', [$Welcome_Controller, '']);
-	$vehiculeController = new VehiculeController();
-	$router->get('/', [$vehiculeController, 'getVehicules']);
+	$vehicule = new VehiculeController();
+	$chauffer = new ChauffeurController();
+	$router->get('/', [$vehicule, 'getVehicules']);
 
-	
+	$trajet = new TrajetController();
+	$router->post('/insertion', [$trajet, 'getDataTrajet']);
+
 }, [ SecurityHeadersMiddleware::class ]);

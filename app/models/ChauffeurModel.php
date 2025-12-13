@@ -13,7 +13,7 @@ class ChauffeurModel {
     }
     
     public function getChauffeurs() {
-        $stmt = $this->db->prepare("select * from chauffeurs");
+        $stmt = $this->db->prepare("select * from coop_chauffeurs");
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

@@ -8,6 +8,7 @@ class ChauffeurController {
     public function getChauffeurs() {
         $Chauffeur=new ChauffeurModel(Flight::db());
         $vs = $Chauffeur->getChauffeurs();
-        Flight::render('index', ['listeChauffeur' => $vs]);
+        return $vs;
+        // Flight::render('index', ['listeChauffeur' => $vs]);
     }
 }

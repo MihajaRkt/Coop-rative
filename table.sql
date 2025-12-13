@@ -1,16 +1,16 @@
 create DATABASE cooperative;
 use cooperative;
 
-CREATE table chauffeurs(
+CREATE table coop_chauffeurs(
     idchauffeur int auto_increment PRIMARY key,
     nom VARCHAR(50)
 );
-CREATE table vehicules(
+CREATE table coop_vehicules(
     idvehicule int auto_increment PRIMARY key,
     nom VARCHAR(50)
 );
 
-CREATE table trajet(
+CREATE table coop_trajet(
     idtrajet int auto_increment PRIMARY key,
     idvehicule int,
     idchauffeur int,
@@ -20,6 +20,6 @@ CREATE table trajet(
     recetteMt DOUBLE,
     typee VARCHAR(1),
     carburantMt double,
-    FOREIGN KEY(idvehicule) REFERENCES vehicules(idvehicule),
-    FOREIGN KEY(idchauffeur) REFERENCES chauffeurs(idchauffeur)
+    FOREIGN KEY(idvehicule) REFERENCES coop_vehicules(idvehicule),
+    FOREIGN KEY(idchauffeur) REFERENCES coop_chauffeurs(idchauffeur)
 );

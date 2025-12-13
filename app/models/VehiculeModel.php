@@ -13,7 +13,7 @@ class VehiculeModel {
     }
     
     public function getVehicules() {
-        $stmt = $this->db->prepare("select * from vehicules");
+        $stmt = $this->db->prepare("select * from coop_vehicules");
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
